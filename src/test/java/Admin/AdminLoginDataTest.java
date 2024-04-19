@@ -18,5 +18,6 @@ public class AdminLoginDataTest {
 		AdminLoginPage adminLoginPage=new AdminLoginPage(driver);
 		adminLoginPage.loginToApp(name, pass);
 		//driver.close();
+		//hello
 	}
 }
