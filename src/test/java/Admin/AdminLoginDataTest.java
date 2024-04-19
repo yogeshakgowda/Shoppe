@@ -19,5 +19,7 @@ public class AdminLoginDataTest {
 		adminLoginPage.loginToApp(name, pass);
 		//driver.close();
 		//hello
+		
+		System.out.println("hello");
 	}
 }
