@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="2" total="4" passed="2" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[---connect to DB---]]>
+    </line>
+    <line>
+      <![CDATA[Execution Starts From here]]>
+    </line>
+    <line>
+      <![CDATA[script----->Executed Successfully]]>
+    </line>
+    <line>
+      <![CDATA[---close browser---]]>
+    </line>
+    <line>
+      <![CDATA[Execution Starts From here]]>
+    </line>
+    <line>
+      <![CDATA[script----->Executed Successfully]]>
+    </line>
+    <line>
+      <![CDATA[---close browser---]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2024-04-17T16:28:49 IST" name="Suite" finished-at="2024-04-17T16:31:17 IST" duration-ms="148258">
+    <groups>
+    </groups>
+    <test started-at="2024-04-17T16:28:49 IST" name="Test" finished-at="2024-04-17T16:31:17 IST" duration-ms="148258">
+      <class name="Admin.BaseClassLoginAsUsreAndAdminUsingTest">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:Admin.BaseClassLoginAsUsreAndAdminUsingTest@77fbd92c]" started-at="2024-04-17T16:30:11 IST" name="launchBrowser" finished-at="2024-04-17T16:30:14 IST" duration-ms="2767" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="script()[pri:0, instance:Admin.BaseClassLoginAsUsreAndAdminUsingTest@77fbd92c]" started-at="2024-04-17T16:30:14 IST" name="script" finished-at="2024-04-17T16:31:16 IST" duration-ms="62508" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Execution Starts From here]]>
+            </line>
+            <line>
+              <![CDATA[script----->Executed Successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- script -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Admin.BaseClassLoginAsUsreAndAdminUsingTest@77fbd92c]" started-at="2024-04-17T16:31:16 IST" name="closeBrowser" finished-at="2024-04-17T16:31:17 IST" duration-ms="635" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[---close browser---]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- Admin.BaseClassLoginAsUsreAndAdminUsingTest -->
+      <class name="Admin.BaseClassManageproductTest">
+        <test-method is-config="true" signature="connectToDB()[pri:0, instance:Admin.BaseClassManageproductTest@4550bb58]" started-at="2024-04-17T16:28:47 IST" name="connectToDB" finished-at="2024-04-17T16:28:48 IST" duration-ms="1543" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[---connect to DB---]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- connectToDB -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:Admin.BaseClassManageproductTest@4550bb58]" started-at="2024-04-17T16:28:50 IST" name="launchBrowser" finished-at="2024-04-17T16:29:13 IST" duration-ms="23570" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="script()[pri:0, instance:Admin.BaseClassManageproductTest@4550bb58]" started-at="2024-04-17T16:29:13 IST" name="script" finished-at="2024-04-17T16:30:10 IST" duration-ms="57013" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Execution Starts From here]]>
+            </line>
+            <line>
+              <![CDATA[script----->Executed Successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- script -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Admin.BaseClassManageproductTest@4550bb58]" started-at="2024-04-17T16:30:10 IST" name="closeBrowser" finished-at="2024-04-17T16:30:11 IST" duration-ms="624" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[---close browser---]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="closeDB()[pri:0, instance:Admin.BaseClassManageproductTest@4550bb58]" started-at="2024-04-17T16:31:18 IST" name="closeDB" finished-at="2024-04-17T16:31:18 IST" duration-ms="1" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "java.sql.Connection.close()" because "this.con" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "java.sql.Connection.close()" because "this.con" is null
+at com.GenericUtilities.DatabaseUtility.closeDB(DatabaseUtility.java:68)
+at com.GenericUtilities.BaseClass.closeDB(BaseClass.java:69)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:404)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDB -->
+      </class> <!-- Admin.BaseClassManageproductTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Suite">
+	<listeners>
+		<listener class-name="com.GenericUtilities.GenericListeners"></listener>
+	</listeners>
+  <test thread-count="2" parallel="tests" name="Test">
+    <classes>
+      <class name="Admin.BaseClassSignupTest"/>
+      <class name="User.BaseClassOrderProductCheckinOMTest"/>
+      <class name="Admin.BaseClassManageproductTest"/>
+      <class name="User.BaseClassInsertAndOrderSameproTest"/>
+      <class name="Admin.BaseClassLoginAsUsreAndAdminUsingTest"/>
+      <class name="User.BaseClassShippingTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+ 
